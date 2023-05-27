@@ -1,0 +1,86 @@
+.services{
+    display: flex;
+    position: relative;
+}
+
+.services-content{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    margin: auto;
+}
+
+.services-content .container{
+    width: 75%;
+}
+
+.services-content h2{
+   color: var(--Very-dark-desaturated-blue);
+   font-size: 42px;
+}
+
+.services-content p{
+    color: var(--Very-dark-grayish-blue);
+    text-transform: none;
+    font-family: var(--Barlow-font);
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 1.4;
+    margin: 10px 0px;
+}
+
+.services-content span{
+    color: var(--Very-dark-desaturated-blue);
+    text-transform: uppercase;
+    font-weight: bold;
+    width: max-content;
+    cursor: pointer;
+}
+
+.services-content span.yellow{
+    box-shadow: 0px 9px 10px -1px var(--Yellow);
+}
+
+.services-content span.red{
+    box-shadow: 0px 9px 10px -1px var(--Soft-red);
+}
+
+.services-layout{
+    flex: 1;
+}
+.services-layout img{
+    width: 100%;
+    height: 100%;
+}
+.services-layout-content{
+    height: 66vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    padding: 50px;
+    gap: 20px;
+}
+
+.services-layout-content p{    
+    font-weight: 400;
+    font-size: 14px; 
+}
+
+.services-layout-content:nth-child(1){
+    background-image: url('../images/desktop/image-graphic-design.jpg');
+    color: var(--Dark-desaturated-cyan)
+}
+
+.services-layout-content:nth-child(2){
+    background-image: url('../images/desktop/image-photography.jpg');
+    color: var(--Dark-blue)
+}

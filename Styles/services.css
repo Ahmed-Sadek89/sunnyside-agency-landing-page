@@ -18,7 +18,7 @@
 
 .services-content h2{
    color: var(--Very-dark-desaturated-blue);
-   font-size: 42px;
+   
 }
 
 .services-content p{
@@ -55,7 +55,7 @@
     height: 100%;
 }
 .services-layout-content{
-    height: 66vh;
+    height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -66,14 +66,9 @@
     justify-content: flex-end;
     align-items: center;
     text-align: center;
-    padding: 50px;
     gap: 20px;
 }
 
-.services-layout-content p{    
-    font-weight: 400;
-    font-size: 14px; 
-}
 
 .services-layout-content:nth-child(1){
     background-image: url('../images/desktop/image-graphic-design.jpg');
@@ -83,4 +78,58 @@
 .services-layout-content:nth-child(2){
     background-image: url('../images/desktop/image-photography.jpg');
     color: var(--Dark-blue)
+}
+
+
+@media(min-width: 0px){
+    .services{
+        flex-direction: column-reverse;
+    }
+    .services:nth-child(2){
+        flex-direction: column;
+    }
+    .services-content{
+        padding: 60px 0px;
+        text-align: center;
+    }
+    .services-content h2 {
+        font-size: 26px;
+    }
+
+    .services-content p {
+        font-weight: 500;
+        font-size: 17px;
+        margin: 40px 0px;
+    }
+
+    .services:nth-child(3){
+        flex-direction: column;
+    }
+
+    .services-layout-content {
+        padding: 20px;
+    }
+}
+
+@media(min-width: 375px){
+    .services,
+    .services:nth-child(2){
+        flex-direction: row;
+    }
+    .services-content{text-align: initial; padding:0px;}
+    .services-content h2 {
+        font-size: 42px;
+    }
+    .services-layout-content p{    
+        font-weight: 400;
+        font-size: 14px;
+         margin: 10px 0px;
+    }
+    .services:nth-child(3){
+        flex-direction: row;
+    }
+
+    .services-layout-content {
+        padding: 50px;
+    }
 }

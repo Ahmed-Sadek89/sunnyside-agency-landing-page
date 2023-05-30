@@ -1,0 +1,18 @@
+.gallary{
+    display: grid;
+}
+
+
+
+@media(min-width: 0px){
+    .gallary{
+        grid-template-columns: repeat(2,50%);
+    }
+}
+
+@media(min-width: 375px){
+    .gallary{
+        grid-template-columns: repeat(4,25%);
+    }
+
+}
